@@ -1,13 +1,14 @@
 import React, {useState} from "react";
 
-const INITIAL_STATE = {"height": "",
-                        "width": "",
-                        "color": ""};
+const INITIAL_STATE = { height: "",
+                        width: "",
+                        color: ""};
 
-const { formData, setFormData } = useState(INITIAL_STATE);
-
+                        
+                        
 
 function NewBoxForm({addBox}){
+    const [ formData, setFormData ] = useState(INITIAL_STATE);
     
     function handleSubmit(evt){
         evt.preventDefault();
@@ -58,3 +59,4 @@ function NewBoxForm({addBox}){
 
 
 
+export default NewBoxForm;
