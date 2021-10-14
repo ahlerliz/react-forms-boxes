@@ -44,7 +44,6 @@ function NewBoxForm({addBox}){
     
           <label htmlFor="color">Background color:</label>
           <input
-            type="number"
             id="color"
             name="color"
             value={formData.color}

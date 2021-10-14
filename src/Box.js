@@ -6,9 +6,9 @@ function Box({ removeBox, height, width, color, id }) {
     };
 
     const style = {
-        height: height,
-        width: width,
-        backgroundColor: color
+        height: `${height}em`,
+        width: `${width}em`,
+        backgroundColor: color,
     };
     
     return (

@@ -19,7 +19,7 @@ function BoxList() {
     function renderBoxes() {
         return (
             <div>
-                {boxList.map(box => <Box id={box.id} height={box.height} width={box.width} color={box.color} removeBox={removeBox} />)}
+                {boxList.map(({id,width, height, color}) => (<Box id={id} height={height} width={width} color={color} removeBox={removeBox} />))}
             </div>
         )
     }
